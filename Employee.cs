@@ -19,6 +19,9 @@ Employee is identified by an ID, Name, security level, salary, hire date and Gen
         public int salary { get; set; }
         public Hire_Date hire_date { get; set; }
 
+        #region Q3
+
+        
         public char Gender
         {
             get
@@ -36,7 +39,7 @@ Employee is identified by an ID, Name, security level, salary, hire date and Gen
             
         }
 
-
+        #endregion
 
 
         #endregion
@@ -113,9 +116,15 @@ Employee is identified by an ID, Name, security level, salary, hire date and Gen
         //}
         #endregion
 
+
+        #region Q5
+
+        
         public override string ToString()
         {
             return $"Id: {Id}\nName: {Name}\nSecurity Level: {security_level}\nSalary: {string.Format("{0:C}",salary)}\nHire Date: {hire_date}\nGender: {Gender  }";
         }
+        #endregion
     }
+
 }

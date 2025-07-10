@@ -75,12 +75,15 @@
         
         static void Main(string[] args)
         {
+            #region q6
+
+            
             Employee[] EmpArr = new Employee[3];
             EmpArr[0] = new Employee(10, "ahmed", Security_Level.DBA, 5000, new Hire_Date(10, 12, 2017), 'M');
             EmpArr[1] = new Employee(20, "Mahmoud", Security_Level.guest, 50000, new Hire_Date(7, 10, 2025), 'M');
             EmpArr[2] = new Employee(30, "Nour", Security_Level.secretary, 49000, new Hire_Date(8, 10, 2025), 'F');
 
-
+            #endregion
             for (int i = 0; i < EmpArr.Length; i++) {
 
                 Console.WriteLine($"\ndata for #{i+1} Employee\n");
